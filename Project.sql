@@ -19,7 +19,7 @@ CREATE TABLE Depot (
 );
 
 Alter table Depot add constraint pk_depot primary key (dep_id);
-Alter table Depot add constraint ck_depot_volume check (volume >= 0);
+
 
 INSERT INTO Depot (dep_id, addr, volume) Values 
 ('d1', 'New Yrok', 9000),
